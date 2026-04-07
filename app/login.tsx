@@ -14,8 +14,10 @@ export default function Login() {
             <TextInput placeholder='Insira seu CPF' style={styles.input}/>
             <Text style={styles.esquerda}>Senha</Text>
             <TextInput placeholder='Insira seu CPF' style={styles.input}/>
-            <Link href={''} style={styles.direita}>Cadastrar</Link>
-            <Link href={''} style={styles.direita}>Esqueci a senha</Link>
+            <View style={styles.baixo}>
+                <Link href={''} style={styles.direita}>Cadastrar</Link>
+                <Link href={''} style={styles.direita}>Esqueci a senha</Link>
+            </View> 
         </View>
         <View>
             <Link href={''} style={styles.btn}>ENTRAR</Link>

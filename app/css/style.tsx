@@ -32,18 +32,22 @@ const styles = StyleSheet.create({
     width:350,
   },
   btn:{
-width:150,
-height:50,
-backgroundColor:'blue',
-borderRadius:10,
-display:'flex',
-alignItems:'center',
-justifyContent:'center',
-color:'white'
+    width:150,
+    height:50,
+    backgroundColor:'blue',
+    borderRadius:10,
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    color:'white'
   },
   img:{
     width:300,
     height:45,
+  },
+  baixo:{
+    display:'flex',
+    
   }
 });
 
