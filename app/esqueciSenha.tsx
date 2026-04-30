@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Text, View, TextInput, Image } from "react-native";
 import styles from "./css/style";
 import { Link } from "expo-router";
+import FormField from "./components/FormFiel";
 
 export default function EsqueciSenha() {
   return (
@@ -14,8 +15,7 @@ export default function EsqueciSenha() {
       </View>
 
       <View style={styles.form}>
-        <Text style={styles.esquerda}>Email</Text>
-        <TextInput placeholder="Insira seu email" style={styles.input} />
+        <FormField label="Email" placeholder="Insira seu email" secure={false}/>
 
         <View style={styles.contBaixo}>
           <View style={styles.baixo}>

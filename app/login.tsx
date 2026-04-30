@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, TextInput, Image } from "react-native";
 import styles from "./css/style";
 import { Link } from "expo-router";
+import FormField from "./components/FormFiel";
 
 export default function Login() {
   return (
@@ -13,10 +14,8 @@ export default function Login() {
         ></Image>
       </View>
       <View style={styles.form}>
-        <Text style={styles.esquerda}>Login</Text>
-        <TextInput placeholder="Insira seu CPF" style={styles.input} />
-        <Text style={styles.esquerda}>Senha</Text>
-        <TextInput placeholder="Insira sua senha" style={styles.input} />
+        <FormField label="Login" placeholder="Insira seu email" secure={false}/>
+        <FormField label="Senha" placeholder="Insira sua senha" secure/>
         <View style={styles.contBaixo}>
           <View style={styles.baixo}>
             <Link href={"/cadastro"} style={styles.direita}>
