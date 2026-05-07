@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput, Image } from "react-native";
 import styles from "./css/style";
 import { Link } from "expo-router";
 import FormField from "./components/FormFiel";
+import Button from "./components/Button";
 
 export default function Login() {
   return (
@@ -29,9 +30,9 @@ export default function Login() {
       </View>
       <View>
         <Link href={""} style={styles.botao}>
-          <View style={styles.btn}>
-            <Text style={styles.entrar}>ENTRAR</Text>
-          </View>
+          <Button>
+            ACESSAR
+          </Button>
         </Link>
       </View>
       <StatusBar style="auto" />
