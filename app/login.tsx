@@ -29,7 +29,7 @@ export default function Login() {
         </View>
       </View>
       <View>
-        <Link href={""} style={styles.botao}>
+        <Link href={"/dashboard"} style={styles.botao}>
           <Button>
             ACESSAR
           </Button>
