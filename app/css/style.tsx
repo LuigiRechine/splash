@@ -74,6 +74,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     borderWidth: 1,
     borderColor: "#ccc",
+    display: "flex",
+    justifyContent: "center"
+    
   },
 
   cardTitle: {

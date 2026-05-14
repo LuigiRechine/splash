@@ -6,11 +6,16 @@ import Button from "./Button";
 type propsCourseCard = {
     title: string;
     describe: string;
+    visu: number;
     image: any;
 }
 
-export default function CourseCard({ title, describe, image }: propsCourseCard) {
+export default function CourseCard({ title, describe, visu, image }: propsCourseCard) {
+    const [count, setCount] = useState(visu);
 
+    function handleVisu() {
+        setCount(count + 1)
+    }
 
     return (
         <View style={styles.card}>
@@ -22,11 +27,15 @@ export default function CourseCard({ title, describe, image }: propsCourseCard) 
                 {describe}
             </Text>
 
-            <View style={styles.btnCard}>
-                <Button>
+            <Pressable style={styles.btnCard} onPress={handleVisu}>
+                <Button >
                     INICIAR
                 </Button>
-            </View>
+            </Pressable>
+
+            <Text style={styles.cardDescribe}>
+                Visualizações = {count}
+            </Text>
         </View>
     );
 
